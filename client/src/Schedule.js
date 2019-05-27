@@ -26,7 +26,7 @@ class Schedule extends React.Component {
         this.state = {
             temp_user_input: '',
             current_video_index: 0,
-            events: [{id: "z34Znx2FzG0",
+            events: [{id: "eNt78mQJavY",
                       title: "SHAUN – Way Back Home (feat. Conor Maynard) [Sam Feldt Edit] (Official Lyric Video)",
                       channelTitle: "Spinnin' Records",
                       channelId: "UCpDJl2EmP7Oh90Vylx0dZtA",
