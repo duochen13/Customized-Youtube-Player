@@ -2,13 +2,12 @@
   "name": "example-create-react-app-express",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "cd client && brew install yarn && yarn start",
+    "heroku-postbuild": "cd client && yarn install && yarn start",
     "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
-    "crypt": "^2.1.0",
-    "express": "^4.16.4",
+    "express": "^4.16.2",
     "mongoose": "^4.13.6",
     "morgan": "^1.9.0"
   },
@@ -16,7 +15,7 @@
     "concurrently": "^4.0.1"
   },
   "engines": {
-    "node": "v11.8.0"
+    "node": "v8.9.2"
   }
 }
 
