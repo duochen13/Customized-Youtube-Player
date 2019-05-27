@@ -1,3 +1,10 @@
+// ... other imports 
+const path = require("path")
+
+// ... other app.use middleware 
+app.use(express.static(path.join(__dirname, "client", "build")))
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
@@ -8,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/music_player', {useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/music_player', {useNewUrlParser: true});
 //mongodb:// localhost:27017/hashAppDb"
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -201,7 +208,14 @@ app.post('/v1/register', (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`));
+// ...
+// Right before your app.listen(), add this:
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
 
