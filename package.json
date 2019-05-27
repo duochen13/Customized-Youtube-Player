@@ -2,11 +2,8 @@
   "name": "example-create-react-app-express",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
-    "start": "node server.js",
-    "client": "cd client && yarn start",
-    "server": "node server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "heroku-postbuild": "cd client && brew install yarn && yarn start",
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
