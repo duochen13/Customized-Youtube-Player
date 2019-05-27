@@ -6,16 +6,6 @@ import Like_Icon from './assets/like.svg';
 import Unlike_Icon from './assets/unlike.svg';
 import { Tooltip, Icon } from 'antd';
 
-class SpecialImage extends React.Component {
-    render() {
-        return(
-            <div>
-                <img src={this.props.like ? Like_Icon : Unlike_Icon} alt="PUnlike" height="25px" float="left" />
-            </div>
-        )
-    }
-}
-
 // videoId, title, index, isPlaying, handleVideoPlay/Delete
 class ListItem extends React.Component {
     constructor(props) {

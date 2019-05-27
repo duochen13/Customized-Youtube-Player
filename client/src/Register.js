@@ -1,6 +1,5 @@
 import React from 'react';
 import Youtube_Icon from './assets/youtube.svg';
-import Headphone_Icon from './assets/headphones.svg';
 import { Redirect } from 'react-router-dom';
 import { Form, Button, Input } from 'antd';
 import { Layout } from 'antd';

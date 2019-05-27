@@ -59,12 +59,12 @@ class PlayModeMenu extends React.Component {
             // <Layout className="play-mode-menu">
             // </Layout>      
             <Dropdown overlay={menu}>
-                <a className="ant-dropdown-link" href="#" >
+                <span className="ant-dropdown-link" >
                     <img src={mode_icons[parseInt(this.props.current_mode_key) - 1]} alt="current_mode" height="30px" float="left" />
                     &nbsp;&nbsp;&nbsp;
                     <strong>Play Mode</strong> <Icon type="down" />
                     &nbsp;&nbsp;&nbsp;
-                </a>
+                </span>
             </Dropdown>
         )
     }
