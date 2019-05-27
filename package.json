@@ -2,7 +2,7 @@
   "name": "example-create-react-app-express",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "cd client && yarn install && yarn start",
+    "heroku-postbuild": "cd client && yarn install && yarn add react-router-dom && yarn start",
     "start": "node server.js"
   },
   "dependencies": {
