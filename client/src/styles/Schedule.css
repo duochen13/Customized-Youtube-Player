@@ -1,0 +1,35 @@
+.input-type-link {
+    width:400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.input-type-order {
+    width:360px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.play-button {
+    color:#a0d911;
+}
+.play-mode-menu {
+    text-align: center;
+}
+
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+}
+
+.items {
+    text-align: center;
+    /* margin-right: auto; */
+    display: inline-block
+    /* margin-left: auto; */
+}

@@ -1,0 +1,25 @@
+.menu-item {
+    padding: 40 40px;
+    /* margin: 5px 10px; */
+    margin: auto;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+  }
+.menu-item-wrapper.active {
+    border: 0px blue solid;
+}
+.menu-item.active {
+    border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+}
+.arrow-prev {
+    margin-left: 150px;
+}
+.arrow-next {
+    margin-right: 150px;
+}
